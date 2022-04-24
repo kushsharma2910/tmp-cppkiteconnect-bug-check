@@ -87,6 +87,7 @@ namespace kiteconnect
   constexpr double DEFAULTDOUBLE = std::numeric_limits<double>::quiet_NaN();
   inline bool isValid(int num) { return num == DEFAULTINT; };
   inline bool isValid(double num) { return num == DEFAULTDOUBLE; };
+  inline bool isValid2(double num) { return std::isnan(num); };
 
   namespace config
   {
